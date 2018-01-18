@@ -17,6 +17,7 @@ do
 	then
 		echo "$directory doesn't exist.  Creating..."
 		mkdir $directory
+		touch $directory/README.md
 	fi
 done
 
@@ -24,9 +25,13 @@ done
 curl https://raw.githubusercontent.com/irawoodring/CIS263_Project_Template/master/include/catch.hpp >> include/catch.hpp
 
 git add ./bin
+git add ./bin/README.md
 git add ./include
+git add ./include/README.md
 git add ./lib
+git add ./lib/README.md
 git add ./src
+git add ./src/README.md
 git add ./include/catch.hpp
 git commit -m "Setup project skeleton."
 git push
