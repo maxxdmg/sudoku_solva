@@ -24,6 +24,9 @@ done
 # Copy the catch framework from mr.w's repo
 curl https://raw.githubusercontent.com/irawoodring/CIS263_Project_Template/master/include/catch.hpp >> include/catch.hpp
 
+# Copy the makefile from mr.w's repo
+curl https://raw.githubusercontent.com/irawoodring/CIS263_Project_Template/master/Makefile >> Makefile
+
 git add ./bin
 git add ./bin/README.md
 git add ./include
